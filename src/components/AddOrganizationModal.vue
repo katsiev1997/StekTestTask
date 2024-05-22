@@ -39,7 +39,6 @@ const isButtonDisabled = computed(() => {
           >Название организации</label
         >
         <input
-          @input="onChangeName"
           v-model="name"
           type="text"
           id="name"
