@@ -79,7 +79,7 @@ const sortOrganizations = (field) => {
         </tr>
       </thead>
       <tbody>
-        <tr v-for="organization in sortedOrganizations" class="border-b">
+        <tr v-for="organization in sortedOrganizations" :key="organization.name + organization.director + organization.phone" class="border-b">
           <td class="py-2 px-4">{{ organization.name }}</td>
           <td class="py-2 px-4">{{ organization.director }}</td>
           <td class="py-2 px-4">{{ organization.phone }}</td>
